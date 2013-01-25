@@ -1,7 +1,7 @@
 host <%= host %> {
   hardware ethernet   <%= mac %>;
   fixed-address       <%= ip %>;
-<% if @option_hostname -%>
-  option host-name    "<%= @option_hostname %>";
+<% if @set_option_hostname -%>
+  option host-name    "<%= host %>";
 <% end -%>
 }

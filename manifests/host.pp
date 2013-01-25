@@ -2,7 +2,7 @@ define dhcp::host (
   $ip,
   $mac,
   $comment='',
-  $option_hostname=$title,
+  $set_option_hostname=true,
 ) {
 
   $host = $title
