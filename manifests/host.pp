@@ -1,6 +1,8 @@
 define dhcp::host (
   $ip,
   $mac,
+  $nextserver=undef,
+  $filename=undef,
   $comment='',
   $set_option_hostname=true,
 ) {
